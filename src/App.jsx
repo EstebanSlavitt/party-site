@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Header } from "./Header";
+import { HomePage } from "./HomePage"; // ✅ Import HomePage
 import { ProductsPage } from "./ProductsPage";
 import { ProductsIndexPage } from "./ProductsIndexPage";
 import { ProductsShowPage } from "./ProductsShowPage";
@@ -18,10 +19,10 @@ const router = createBrowserRouter([
       </div>
     ),
     children: [
-      { path: "/", element: <ProductsPage /> },
+      { path: "/", element: <HomePage /> }, // ✅ HomePage is now the default
       { path: "/products", element: <ProductsIndexPage /> },
       { path: "/products/:id", element: <ProductsShowPage /> },
-      { path: "/services", element: <ServicesPage /> }, // ✅ ServicesPage route fixed
+      { path: "/services", element: <ServicesPage /> },
     ],
   },
 ]);
