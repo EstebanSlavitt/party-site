@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function ProductsShow({ product, onUpdate }) {
+export function ProductsShow({ product, onUpdate, onDestroy }) {
   const [name, setName] = useState(product.name);
   const [url, setUrl] = useState(product.url);
   const [price, setPrice] = useState(product.price);
@@ -46,6 +46,12 @@ export function ProductsShow({ product, onUpdate }) {
         </div>
         <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Update Product</button>
       </form>
+      <button
+        className="bg-red-500 text-white px-4 py-2 mt-4 rounded hover:bg-red-600"
+        onClick={() => onDestroy(product.id)}
+      >
+        Delete Product
+      </button>
     </div>
   );
 }

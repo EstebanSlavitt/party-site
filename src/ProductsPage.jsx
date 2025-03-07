@@ -27,6 +27,11 @@ export function ProductsPage() {
     setIsModalVisible(false);
   };
 
+  const handleDestroy = (id) => {
+    setProducts(products.filter((product) => product.id !== id));
+    setIsModalVisible(false);
+  };
+
   const handleClose = () => {
     setIsModalVisible(false);
   };
@@ -36,7 +41,7 @@ export function ProductsPage() {
       <ProductsNew onCreate={handleCreate} />
       <ProductsIndex products={products} onShow={handleShow} />
       <Modal show={isModalVisible} onClose={handleClose}>
-        {currentProduct && <ProductsShow product={currentProduct} onUpdate={handleUpdate} />}
+        {currentProduct && <ProductsShow product={currentProduct} onUpdate={handleUpdate} onDestroy={handleDestroy} />}
       </Modal>
     </main>
   );
