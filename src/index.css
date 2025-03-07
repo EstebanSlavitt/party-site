@@ -1,3 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

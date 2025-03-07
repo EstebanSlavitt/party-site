@@ -2,20 +2,23 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   return (
-    <header className="p-4 bg-gray-800 text-white">
-      <nav className="flex justify-between">
-        <Link to="/" className="text-lg font-bold">
-          Party Store
+    <header className="bg-blue-600 text-white p-4 shadow-md">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold">
+          🎉 Party Land
         </Link>
-        <div>
-          <Link to="/" className="mx-2">
+        <nav className="space-x-4">
+          <Link to="/" className="hover:underline">
             Home
           </Link>
-          <Link to="/products" className="mx-2">
+          <Link to="/products" className="hover:underline">
             Products
           </Link>
-        </div>
-      </nav>
+          <Link to="/services" className="hover:underline">
+            Services
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 }
