@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Header } from "./Header";
 import { HomePage } from "./HomePage"; // ✅ Import HomePage
-import { ProductsPage } from "./ProductsPage";
 import { ProductsIndexPage } from "./ProductsIndexPage";
 import { ProductsShowPage } from "./ProductsShowPage";
 import ServicesPage from "./ServicesPage"; // ✅ Fixed default import
@@ -10,7 +9,7 @@ import { Footer } from "./Footer";
 const router = createBrowserRouter([
   {
     element: (
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-white">
         <Header />
         <div className="flex-grow container mx-auto p-4">
           <Outlet />
