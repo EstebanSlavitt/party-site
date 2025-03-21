@@ -1,6 +1,6 @@
 export function HomePage() {
   return (
-    <div className="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-white via-blue-50 to-pink-50 text-center px-6 py-16">
+    <div className="relative min-h-screen flex flex-col items-center bg-gradient-to-b from-white via-blue-50 to-pink-50 text-center px-6 py-16">
       {/* Welcome Header */}
       <h1 className="text-5xl sm:text-6xl font-extrabold text-sky-700 tracking-tight drop-shadow-sm mb-4">
         Welcome to <span className="text-pink-500">Party Land Rentals</span>
@@ -24,7 +24,7 @@ export function HomePage() {
       </div>
 
       {/* CTA Buttons */}
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-4 mb-16">
         <a
           href="/products"
           className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg shadow"
@@ -39,11 +39,27 @@ export function HomePage() {
         </a>
       </div>
 
+      {/* Image Showcase */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mb-16">
+        {[
+          "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=2940&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1478088702756-f16754aaf0c4?q=80&w=2940&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1496637721836-f46d116e6d34?q=80&w=3087&auto=format&fit=crop",
+        ].map((src, i) => (
+          <img
+            key={i}
+            src={src}
+            alt={`party-img-${i}`}
+            className="rounded-xl shadow-md object-cover h-64 w-full hover:scale-105 transition duration-300"
+          />
+        ))}
+      </div>
+
       {/* About Section */}
-      <section className="mt-16 max-w-4xl text-left bg-white bg-opacity-90 p-6 rounded-xl shadow">
+      <section className="max-w-4xl text-left bg-white bg-opacity-90 p-6 rounded-xl shadow">
         <h3 className="text-3xl font-bold text-sky-700 mb-2">Why Party Land?</h3>
         <p className="text-gray-700 leading-relaxed">
-          At Party Land, we believe celebrations should be easy, joyful, and unforgettable. That’s why we go above and beyond with every delivery — from bouncing castles to balloon bouquets, we’ve got your back. Whether you're throwing a backyard birthday or a full-blown bash, we're your friendly local party experts.
+          At Party Land, we believe celebrations should be easy, joyful, and unforgettable. That’s why we go above and beyond with every delivery — from bouncing castles to balloon bouquets, we’ve got your back. Whether you're throwing a backyard birthday or a full-blown bash, we're your friendly local party experts with top-tier customer service, quality rentals, and a passion for parties.
         </p>
       </section>
     </div>
