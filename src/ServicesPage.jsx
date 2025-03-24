@@ -1,39 +1,51 @@
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center p-10 bg-gradient-to-r from-pink-200 to-yellow-200">
-      {/* 🎈 Left Side - Services Content */}
-      <div className="lg:w-1/2 w-full text-center lg:text-left p-8 bg-white bg-opacity-90 rounded-lg shadow-xl">
-        <h1 className="text-5xl font-extrabold text-pink-600 mb-6">🎊 Our Services 🎊</h1>
-        <p className="text-lg text-gray-700 font-medium">
-          We provide everything you need for the ultimate party experience!
-        </p>
+    <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-slate-100 py-16 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Text Section */}
+        <div className="space-y-8">
+          <h1 className="text-5xl font-extrabold text-slate-800 leading-tight">
+            Our <span className="text-blue-600">Services</span>
+          </h1>
+          <p className="text-lg text-slate-600">
+            At Party Land, we bring your celebrations to life. Whether you're hosting a backyard birthday or a full-scale event, we provide top-quality rentals and party essentials with exceptional service.
+          </p>
 
-        {/* 🏆 Services List */}
-        <div className="mt-6 space-y-6">
-          <div className="p-5 bg-blue-500 text-white rounded-lg shadow-lg transform transition hover:scale-105">
-            <h2 className="text-2xl font-bold">🎪 Party Rentals</h2>
-            <p className="mt-1">Tables, chairs, canopies, tents, round tables with umbrellas, and bounce houses.</p>
-          </div>
+          <div className="space-y-6">
+            {/* Service Card 1 */}
+            <div className="p-5 border-l-4 border-blue-500 bg-white shadow-md rounded-md hover:shadow-xl transition">
+              <h2 className="text-2xl font-bold text-slate-800 mb-1">🎪 Event Rentals</h2>
+              <p className="text-slate-600">
+                From tables and chairs to tents and bounce houses—everything you need for a fun, organized party.
+              </p>
+            </div>
 
-          <div className="p-5 bg-yellow-500 text-white rounded-lg shadow-lg transform transition hover:scale-105">
-            <h2 className="text-2xl font-bold">🎈 Balloons & Helium</h2>
-            <p className="mt-1">We fill up balloons with helium and offer custom balloon decorations.</p>
-          </div>
+            {/* Service Card 2 */}
+            <div className="p-5 border-l-4 border-yellow-400 bg-white shadow-md rounded-md hover:shadow-xl transition">
+              <h2 className="text-2xl font-bold text-slate-800 mb-1">🎈 Balloon Services</h2>
+              <p className="text-slate-600">
+                Eye-catching helium balloons and custom balloon arrangements to elevate your decor.
+              </p>
+            </div>
 
-          <div className="p-5 bg-pink-500 text-white rounded-lg shadow-lg transform transition hover:scale-105">
-            <h2 className="text-2xl font-bold">🎉 Party Supplies</h2>
-            <p className="mt-1">Piñatas, candies, and all paper supplies for your party needs.</p>
+            {/* Service Card 3 */}
+            <div className="p-5 border-l-4 border-pink-400 bg-white shadow-md rounded-md hover:shadow-xl transition">
+              <h2 className="text-2xl font-bold text-slate-800 mb-1">🎉 Party Supplies</h2>
+              <p className="text-slate-600">
+                We’ve got piñatas, candies, paper goods, and more to complete your celebration in style.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* 🎂 Right Side - Party Image */}
-      <div className="hidden lg:flex lg:w-1/2 justify-center items-center">
-        <img
-          src="https://images.pexels.com/photos/6191547/pexels-photo-6191547.jpeg?auto=compress&cs=tinysrgb&w=1200"
-          alt="Party setup"
-          className="rounded-lg shadow-xl w-3/4"
-        />
+        {/* Image Section */}
+        <div className="w-full h-full flex justify-center items-center">
+          <img
+            src="https://images.pexels.com/photos/6191547/pexels-photo-6191547.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Party setup"
+            className="rounded-lg shadow-lg w-full max-w-md object-cover transition-transform duration-300 hover:scale-105"
+          />
+        </div>
       </div>
     </div>
   );
