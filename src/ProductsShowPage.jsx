@@ -8,63 +8,63 @@ export function ProductsShowPage() {
     {
       id: 1,
       name: "Tables & Chairs",
-      url: "https://images.unsplash.com/photo-1587582423112-ec5f6fefb3c3?q=80&w=1400&auto=format&fit=crop",
-      description: "Perfect for any party or event, our high-quality tables and sturdy chairs are available in multiple sizes and styles.",
+      url: "https://images.pexels.com/photos/12919431/pexels-photo-12919431.jpeg",
+      description: "Perfect for any event. Our tables and sturdy chairs are available in multiple styles.",
     },
     {
       id: 2,
       name: "Canopies & Tents",
-      url: "https://images.unsplash.com/photo-1551121403-1b4d7f3c11e8?q=80&w=1400&auto=format&fit=crop",
-      description: "Keep your guests shaded and dry with our stylish and durable tents, perfect for weddings and outdoor gatherings.",
+      url: "https://images.pexels.com/photos/28937190/pexels-photo-28937190/free-photo-of-elegant-white-event-tent-against-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      description: "Stylish and durable. Stay shaded and dry at your outdoor events.",
     },
     {
       id: 3,
       name: "Round Tables w/ Umbrella",
-      url: "https://images.unsplash.com/photo-1622737133823-964892e28929?q=80&w=1400&auto=format&fit=crop",
-      description: "Add elegance and comfort to your outdoor event with our round tables and matching umbrellas.",
+      url: "https://www.theknot.com/tk-media/images/8bc34da8-fcb9-11e4-be0a-22000aa61a3e~rs_1458.h?quality=60",
+      description: "Add elegance and comfort to your event with our shaded round tables.",
     },
     {
       id: 4,
       name: "Bounce House (Jumpers)",
-      url: "https://images.unsplash.com/photo-1625489173650-75c94bcb43ea?q=80&w=1400&auto=format&fit=crop",
-      description: "Our fun and safe jumpers are a hit with kids and perfect for birthdays or school events!",
+      url: "https://files.sysers.com/cp/upload/909jumpers/gallery/full/3-2.jpg",
+      description: "Fun, safe, and a hit with the kids. Perfect for birthdays and school events.",
     },
     {
       id: 5,
       name: "Balloons",
-      url: "https://images.unsplash.com/photo-1604035092691-3d10b7d4904b?q=80&w=1400&auto=format&fit=crop",
-      description: "From standard balloons to custom designs, we offer colorful, high-quality balloon options for any occasion.",
+      url: "https://www.marthastewart.com/thmb/4mtjjqwTR-gDScS4K1xg9SaW_rY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/festive-balloon-wall-1E5A0619-0421-2000-3d31d376cad74e379ede993d2a700f54.jpg",
+      description: "Colorful balloons in various styles. Great for decor or custom designs.",
     },
     {
       id: 6,
       name: "Piñatas",
-      url: "https://images.unsplash.com/photo-1626908674589-8cb0d4d10a62?q=80&w=1400&auto=format&fit=crop",
-      description: "Our festive piñatas bring fun and excitement to your party. Available in many shapes and themes!",
+      url: "https://www.mexperience.com/wp-content/uploads/Pinata-Party-Mexico-NBS-1200x800.jpg",
+      description: "Exciting and fun — choose from many festive shapes and themes!",
     },
     {
       id: 7,
       name: "Candies",
-      url: "https://images.unsplash.com/photo-1612197596216-d7f55e2c318d?q=80&w=1400&auto=format&fit=crop",
-      description: "Yummy treats for candy buffets, piñatas, or goodie bags—our candy selection is always a hit!",
+      url: "https://mysillysquirts.com/wp-content/uploads/2023/03/Complete-Candy-Bouquet-1024x719.jpg",
+      description: "Sweet treats for candy buffets, goody bags, or piñatas!",
     },
     {
       id: 8,
       name: "Party Paper Supplies",
-      url: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1400&auto=format&fit=crop",
-      description: "Everything you need from plates and napkins to cups and table covers in fun party themes!",
+      url: "https://partycorner.com/wp-content/uploads/2020/04/EV16_PT_TableInlineConfetti.jpg",
+      description: "Cups, plates, napkins, and more — all in stylish and festive designs.",
     },
     {
       id: 9,
       name: "Helium Balloon Service",
-      url: "https://images.unsplash.com/photo-1496637721836-f46d116e6d34?q=80&w=1400&auto=format&fit=crop",
-      description: "Let your balloons float with our helium fill-up service—available for both latex and foil!",
+      url: "https://b265479.smushcdn.com/265479/wp-content/uploads/2024/01/Balloon_HQ_Resize_1920x1080_where_to_get_balloons_filled_with_helium-980x551.png?lossy=2&strip=1&webp=1",
+      description: "Let your balloons float! We fill both latex and foil balloons with helium.",
     },
   ];
 
   const product = products.find((p) => p.id === parseInt(id));
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-blue-50 to-pink-50 p-10">
+    <div className="min-h-screen bg-gradient-to-b from-white via-slate-100 to-gray-50 p-10">
       {product ? (
         <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl p-8 flex flex-col lg:flex-row items-center gap-10">
           <img

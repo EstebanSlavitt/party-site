@@ -5,77 +5,81 @@ export function ProductsIndexPage() {
     {
       id: 1,
       name: "Tables & Chairs",
-      url: "https://jumppartytexas.com/wp-content/uploads/2015/05/Jump-Party-Texas-8-Rectangle-Table-3.jpg",
-      price: "$15 per set",
+      url: "https://images.pexels.com/photos/12919431/pexels-photo-12919431.jpeg",
+      description: "Perfect for any event. Our tables and sturdy chairs are available in multiple styles.",
     },
     {
       id: 2,
       name: "Canopies & Tents",
-      url: "https://cdn.toolots.com/media/catalog/product/e/c/ecs6fmkul_4625976.jpg",
-      price: "$50 per tent",
+      url: "https://images.pexels.com/photos/28937190/pexels-photo-28937190/free-photo-of-elegant-white-event-tent-against-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      description: "Stylish and durable. Stay shaded and dry at your outdoor events.",
     },
     {
       id: 3,
       name: "Round Tables w/ Umbrella",
-      url: "https://just4funpartyrentals.com/wp-content/uploads/2016/04/Seats-8-10-scaled.jpg",
-      price: "$20 each",
+      url: "https://www.theknot.com/tk-media/images/8bc34da8-fcb9-11e4-be0a-22000aa61a3e~rs_1458.h?quality=60",
+      description: "Add elegance and comfort to your event with our shaded round tables.",
     },
     {
       id: 4,
       name: "Bounce House (Jumpers)",
-      url: "https://files.sysers.com/cp/upload/909jumpers/gallery/full/Upland7.jpeg",
-      price: "$100 per day",
+      url: "https://files.sysers.com/cp/upload/909jumpers/gallery/full/3-2.jpg",
+      description: "Fun, safe, and a hit with the kids. Perfect for birthdays and school events.",
     },
     {
       id: 5,
       name: "Balloons",
-      url: "https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1046596358-scaled.jpg",
-      price: "$5 per pack",
+      url: "https://www.marthastewart.com/thmb/4mtjjqwTR-gDScS4K1xg9SaW_rY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/festive-balloon-wall-1E5A0619-0421-2000-3d31d376cad74e379ede993d2a700f54.jpg",
+      description: "Colorful balloons in various styles. Great for decor or custom designs.",
     },
     {
       id: 6,
       name: "Piñatas",
-      url: "https://i0.wp.com/onesimpleparty.com/wp-content/uploads/2022/04/kidhittingpinata1.jpg?resize=1024%2C576&ssl=1",
-      price: "$25 each",
+      url: "https://www.mexperience.com/wp-content/uploads/Pinata-Party-Mexico-NBS-1200x800.jpg",
+      description: "Exciting and fun — choose from many festive shapes and themes!",
     },
     {
       id: 7,
       name: "Candies",
-      url: "https://i.kinja-img.com/image/upload/c_fit,q_60,w_645/2489ccab6d4921c8b6ef0ba76d6cde5c.jpg",
-      price: "$10 per bag",
+      url: "https://mysillysquirts.com/wp-content/uploads/2023/03/Complete-Candy-Bouquet-1024x719.jpg",
+      description: "Sweet treats for candy buffets, goody bags, or piñatas!",
     },
     {
       id: 8,
       name: "Party Paper Supplies",
-      url: "https://todayscreativelife.com/wp-content/uploads/2015/02/party-pantry-Pin-it-600x782.jpg",
-      price: "Varies",
+      url: "https://partycorner.com/wp-content/uploads/2020/04/EV16_PT_TableInlineConfetti.jpg",
+      description: "Cups, plates, napkins, and more — all in stylish and festive designs.",
     },
     {
       id: 9,
       name: "Helium Balloon Service",
-      url: "https://www.balloontime.com/wp-content/uploads/2021/07/inflate-step-2.jpg",
-      price: "$3 per balloon",
+      url: "https://b265479.smushcdn.com/265479/wp-content/uploads/2024/01/Balloon_HQ_Resize_1920x1080_where_to_get_balloons_filled_with_helium-980x551.png?lossy=2&strip=1&webp=1",
+      description: "Let your balloons float! We fill both latex and foil balloons with helium.",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-pink-200 to-yellow-200 p-10">
-      <h1 className="text-5xl font-extrabold text-center text-pink-600 mb-10">🎉 Our Party Rentals & Supplies 🎉</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-b from-white via-slate-100 to-gray-50 py-10 px-4">
+      <h1 className="text-5xl font-extrabold text-center text-sky-700 mb-12 tracking-tight">
+        🎈 Party Rentals & Supplies
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105"
+            className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 overflow-hidden"
           >
-            <img src={product.url} alt={product.name} className="w-full h-40 object-cover mb-4 rounded-lg" />
-            <h2 className="text-3xl font-bold text-pink-600">{product.name}</h2>
-            <p className="text-xl text-gray-700 font-semibold">{product.price}</p>
-            <Link
-              to={`/products/${product.id}`}
-              className="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition"
-            >
-              View Details
-            </Link>
+            <img src={product.url} alt={product.name} className="w-full h-52 object-cover" />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold text-sky-700 mb-2">{product.name}</h2>
+              <p className="text-sm text-gray-600">{product.description}</p>
+              <Link
+                to={`/products/${product.id}`}
+                className="mt-4 inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-md shadow transition"
+              >
+                View Details
+              </Link>
+            </div>
           </div>
         ))}
       </div>

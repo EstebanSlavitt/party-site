@@ -1,51 +1,60 @@
+// src/ServicesPage.jsx
+
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-slate-100 py-16 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Text Section */}
-        <div className="space-y-8">
-          <h1 className="text-5xl font-extrabold text-slate-800 leading-tight">
-            Our <span className="text-blue-600">Services</span>
-          </h1>
-          <p className="text-lg text-slate-600">
-            At Party Land, we bring your celebrations to life. Whether you're hosting a backyard birthday or a full-scale event, we provide top-quality rentals and party essentials with exceptional service.
-          </p>
+    <div className="min-h-screen bg-gradient-to-b from-white via-blue-50 to-pink-50 py-12 px-6">
+      {/* Main Heading */}
+      <h1 className="text-5xl font-extrabold text-center text-sky-700 mb-6">
+        Our Services
+      </h1>
+      <p className="text-center max-w-3xl mx-auto text-gray-700 text-lg mb-12">
+        We bring the party to you! Party Land Rentals offers a full range of professional services to help make your event unforgettable. Whether you're planning a backyard birthday or a large outdoor celebration, our team is here to help make it stylish, smooth, and fun!
+      </p>
 
-          <div className="space-y-6">
-            {/* Service Card 1 */}
-            <div className="p-5 border-l-4 border-blue-500 bg-white shadow-md rounded-md hover:shadow-xl transition">
-              <h2 className="text-2xl font-bold text-slate-800 mb-1">🎪 Event Rentals</h2>
-              <p className="text-slate-600">
-                From tables and chairs to tents and bounce houses—everything you need for a fun, organized party.
-              </p>
-            </div>
-
-            {/* Service Card 2 */}
-            <div className="p-5 border-l-4 border-yellow-400 bg-white shadow-md rounded-md hover:shadow-xl transition">
-              <h2 className="text-2xl font-bold text-slate-800 mb-1">🎈 Balloon Services</h2>
-              <p className="text-slate-600">
-                Eye-catching helium balloons and custom balloon arrangements to elevate your decor.
-              </p>
-            </div>
-
-            {/* Service Card 3 */}
-            <div className="p-5 border-l-4 border-pink-400 bg-white shadow-md rounded-md hover:shadow-xl transition">
-              <h2 className="text-2xl font-bold text-slate-800 mb-1">🎉 Party Supplies</h2>
-              <p className="text-slate-600">
-                We’ve got piñatas, candies, paper goods, and more to complete your celebration in style.
-              </p>
-            </div>
+      {/* Service Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {[
+          {
+            title: "🎪 Event Rentals",
+            description:
+              "From elegant tables and chairs to canopies, tents, and bounce houses — we’ve got everything for your perfect setup.",
+          },
+          {
+            title: "🎈 Balloon Services",
+            description:
+              "Custom helium balloon arrangements and balloon bars that brighten up any celebration with vibrant colors.",
+          },
+          {
+            title: "🎉 Party Supplies",
+            description:
+              "Piñatas, candy, paper goods, and themed decorations — all your party supplies in one place.",
+          },
+        ].map((service, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+          >
+            <h2 className="text-2xl font-bold text-sky-700">{service.title}</h2>
+            <p className="text-gray-600 mt-2">{service.description}</p>
           </div>
-        </div>
+        ))}
+      </div>
 
-        {/* Image Section */}
-        <div className="w-full h-full flex justify-center items-center">
+      {/* Decorative Images Section */}
+      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {[
+          "https://images.unsplash.com/photo-1502035618526-6b2f1f5bca1b?q=80&w=1470&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1559456751-057ed03f3143?q=80&w=1501&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1513546493312-0066d7de3fd2?q=80&w=1570&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1554727225-ee66ff0a1bc5?q=80&w=1588&auto=format&fit=crop",
+        ].map((url, index) => (
           <img
-            src="https://images.pexels.com/photos/6191547/pexels-photo-6191547.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Party setup"
-            className="rounded-lg shadow-lg w-full max-w-md object-cover transition-transform duration-300 hover:scale-105"
+            key={index}
+            src={url}
+            alt={`Decorative party ${index + 1}`}
+            className="rounded-xl shadow-md object-cover w-full h-64"
           />
-        </div>
+        ))}
       </div>
     </div>
   );
