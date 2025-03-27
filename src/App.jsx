@@ -18,10 +18,10 @@ const router = createBrowserRouter([
       </div>
     ),
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/products", element: <ProductsIndexPage /> },
-      { path: "/products/:id", element: <ProductsShowPage /> },
-      { path: "/services", element: <ServicesPage /> },
+      { path: import.meta.env.BASE_URL, element: <HomePage /> },
+      { path: import.meta.env.BASE_URL + "products", element: <ProductsIndexPage /> },
+      { path: import.meta.env.BASE_URL + "products/:id", element: <ProductsShowPage /> },
+      { path: import.meta.env.BASE_URL + "services", element: <ServicesPage /> },
     ],
   },
 ]);
