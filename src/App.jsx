@@ -4,7 +4,8 @@ import { Footer } from "./Footer";
 import { HomePage } from "./HomePage";
 import { ProductsIndexPage } from "./ProductsIndexPage";
 import { ProductsShowPage } from "./ProductsShowPage";
-import ServicesPage from "./ServicesPage"; // Default export
+import ServicesPage from "./ServicesPage";
+import PoliciesPage from "./PoliciesPage"; 
 
 const router = createBrowserRouter([
   {
@@ -18,10 +19,11 @@ const router = createBrowserRouter([
       </div>
     ),
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/products", element: <ProductsIndexPage /> },
-      { path: "/products/:id", element: <ProductsShowPage /> },
-      { path: "/services", element: <ServicesPage /> },
+      { path: import.meta.env.BASE_URL, element: <HomePage /> },
+      { path: import.meta.env.BASE_URL + "products", element: <ProductsIndexPage /> },
+      { path: import.meta.env.BASE_URL + "products/:id", element: <ProductsShowPage /> },
+      { path: import.meta.env.BASE_URL + "services", element: <ServicesPage /> },
+      { path: import.meta.env.BASE_URL + "policies", element: <PoliciesPage /> }, 
     ],
   },
 ]);

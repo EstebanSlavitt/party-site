@@ -74,7 +74,7 @@ export function ProductsIndexPage() {
               <h2 className="text-2xl font-bold text-sky-700 mb-2">{product.name}</h2>
               <p className="text-sm text-gray-600">{product.description}</p>
               <Link
-                to={`/products/${product.id}`}
+                to={import.meta.env.BASE_URL + `products/${product.id}`}
                 className="mt-4 inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-md shadow transition"
               >
                 View Details
