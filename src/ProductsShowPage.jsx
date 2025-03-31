@@ -84,7 +84,7 @@ export function ProductsShowPage() {
           <h1 className="text-4xl font-extrabold text-sky-700 mb-4">{product.name}</h1>
           <p className="text-lg text-gray-700 leading-relaxed max-w-2xl">{product.description}</p>
           <button
-            onClick={() => navigate("/products")}
+            onClick={() => navigate(import.meta.env.BASE_URL + "products")}
             className="mt-6 bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-lg shadow transition"
           >
             ← Back to Products

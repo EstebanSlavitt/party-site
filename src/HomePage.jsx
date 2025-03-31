@@ -1,4 +1,5 @@
 // src/HomePage.jsx
+import { Link } from "react-router-dom";
 import Ballons from "./assets/ballons.jpeg"
 export function HomePage() {
   return (
@@ -30,18 +31,18 @@ export function HomePage() {
 
       {/* CTA Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mb-16">
-        <a
-          href="/products"
+        <Link
+          to={import.meta.env.BASE_URL + "products"}
           className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg shadow"
         >
           Shop Rentals
-        </a>
-        <a
-          href="/services"
+        </Link>
+        <Link
+          to={import.meta.env.BASE_URL + "services"}
           className="bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 rounded-lg shadow"
         >
           Our Services
-        </a>
+        </Link>
       </div>
 
       {/* Image Showcase */}
