@@ -12,6 +12,33 @@ import Tents5 from "./assets/tents5.jpg"
 import Round1 from "./assets/round1.jpg"
 import Round2 from "./assets/round2.jpg"
 import Round3 from "./assets/round3.jpg"
+import Jumper1 from "./assets/Jumper1.jpg"
+import Jumper2 from "./assets/Jumper2.jpg"
+import Jumper3 from "./assets/Jumper3.jpg"
+import Jumper4 from "./assets/Jumper4.jpg"
+import Jumper5 from "./assets/Jumper5.jpg"
+import Balloon1 from "./assets/Balloon1.jpg"
+import Balloon2 from "./assets/Balloon2.jpg"
+import Balloon3 from "./assets/Balloon3.jpg"
+import Balloon4 from "./assets/Balloon4.jpg"
+import Balloon5 from "./assets/Balloon5.jpg"
+import Pinata1 from "./assets/Pinata1.jpg"
+import Pinata2 from "./assets/Pinata2.jpg"
+import Pinata3 from "./assets/Pinata3.jpg"
+import Pinata4 from "./assets/Pinata4.jpg"
+import Candy1 from "./assets/Candy1.jpg"
+import Candy2 from "./assets/Candy2.jpg"
+import Candy3 from "./assets/Candy3.jpg"
+import Candy4 from "./assets/Candy4.jpg"
+import Supplies1 from "./assets/Supplies1.jpg"
+import Supplies2 from "./assets/Supplies2.jpg"
+import Supplies3 from "./assets/Supplies3.jpg"
+import Supplies4 from "./assets/Supplies4.jpg"
+import Helium1 from "./assets/Helium1.jpg"
+import Helium2 from "./assets/Helium2.jpg"
+import Helium3 from "./assets/Helium3.jpg"
+import Helium4 from "./assets/Helium4.jpg"
+
 
 export function ProductsShowPage() {
   const { id } = useParams();
@@ -64,6 +91,13 @@ export function ProductsShowPage() {
       url: "https://files.sysers.com/cp/upload/909jumpers/gallery/full/3-2.jpg",
       description:
         "Bring the fun! Our colorful bounce houses are safe, clean, and an absolute hit at kids' parties and community events.",
+        gallery: [
+          Jumper1,
+          Jumper2,
+          Jumper3,
+          Jumper4,
+          Jumper5,
+        ],
     },
     {
       id: 5,
@@ -71,6 +105,13 @@ export function ProductsShowPage() {
       url: "https://www.marthastewart.com/thmb/4mtjjqwTR-gDScS4K1xg9SaW_rY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/festive-balloon-wall-1E5A0619-0421-2000-3d31d376cad74e379ede993d2a700f54.jpg",
       description:
         "We offer a full range of balloons — from helium-filled to custom arches and arrangements to liven up your party decor.",
+        gallery: [
+          Balloon1,
+          Balloon2,
+          Balloon3,
+          Balloon4,
+          Balloon5,
+        ],
     },
     {
       id: 6,
@@ -78,6 +119,12 @@ export function ProductsShowPage() {
       url: "https://www.mexperience.com/wp-content/uploads/Pinata-Party-Mexico-NBS-1200x800.jpg",
       description:
         "Bursting with fun! Choose from a variety of shapes and themes to add extra excitement to your party.",
+        gallery: [
+          Pinata1,
+          Pinata2,
+          Pinata3,
+          Pinata4,
+        ],
     },
     {
       id: 7,
@@ -85,6 +132,12 @@ export function ProductsShowPage() {
       url: "https://mysillysquirts.com/wp-content/uploads/2023/03/Complete-Candy-Bouquet-1024x719.jpg",
       description:
         "Treat your guests to a colorful selection of candies, perfect for piñatas, candy buffets, or favor bags.",
+        gallery: [
+          Candy1,
+          Candy2,
+          Candy3,
+          Candy4,
+        ],
     },
     {
       id: 8,
@@ -92,6 +145,12 @@ export function ProductsShowPage() {
       url: "https://partycorner.com/wp-content/uploads/2020/04/EV16_PT_TableInlineConfetti.jpg",
       description:
         "We carry plates, napkins, cups, and table covers in a wide range of styles and colors to match your celebration.",
+        gallery: [
+          Supplies1,
+          Supplies2,
+          Supplies3,
+          Supplies4,
+        ],
     },
     {
       id: 9,
@@ -99,6 +158,12 @@ export function ProductsShowPage() {
       url: "https://b265479.smushcdn.com/265479/wp-content/uploads/2024/01/Balloon_HQ_Resize_1920x1080_where_to_get_balloons_filled_with_helium-980x551.png?lossy=2&strip=1&webp=1",
       description:
         "Bring your balloons to life with our helium service for latex and foil balloons. Great for decorations or party giveaways!",
+        gallery: [
+          Helium1,
+          Helium2,
+          Helium3,
+          Helium4,
+        ],
     },
   ];
 
