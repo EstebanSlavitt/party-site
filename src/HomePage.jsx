@@ -1,6 +1,7 @@
 // src/HomePage.jsx
 import { Link } from "react-router-dom";
-import Ballons from "./assets/ballons.jpeg"
+import Ballons from "./assets/ballons.jpeg";
+
 export function HomePage() {
   return (
     <div className="relative min-h-screen flex flex-col items-center bg-gradient-to-b from-white via-blue-50 to-pink-50 text-center px-6 py-16">
@@ -73,11 +74,12 @@ export function HomePage() {
       <section className="w-full bg-white bg-opacity-90 p-8 rounded-xl shadow max-w-4xl text-left mb-16">
         <h2 className="text-3xl font-bold text-pink-600 mb-4">📞 Contact Us</h2>
         <p className="text-gray-700 text-lg mb-4">
-          Looking for something special? Have a question? Let us know, and we'll get back to you soon.
+          Looking for something special? Have a question? Reach out and let’s make your event unforgettable!
         </p>
         <div className="text-gray-800 space-y-2">
           <p><strong>📍 PARTYLAND RENTALS</strong><br />1601 Railroad Ave. Suite D</p>
           <p><strong>📞 Phone:</strong> 925-292-4844</p>
+          <p><strong>📱 Cell:</strong> 925-660-5020, 925-961-2680</p>
           <p>
             <a
               href="https://www.yelp.com/biz/partyland-livermore"
@@ -88,7 +90,30 @@ export function HomePage() {
               ⭐ Check us out on Yelp
             </a>
           </p>
+          <p className="text-gray-700">
+            🎉 Follow us online:
+            {" "}
+            <a
+              href="https://www.instagram.com/925_partyland/?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-700 underline"
+            >
+              Instagram
+            </a>
+            {" "}or{" "}
+            <a
+              href="https://www.facebook.com/people/Partyland/100063650463175/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
+              Facebook
+            </a>
+            {" "}to see our latest events, rentals, and balloon creations!
+          </p>
         </div>
+
         <div className="mt-6">
           <h3 className="text-xl font-semibold text-sky-700 mb-2">⏰ Hours</h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1 text-gray-600">
