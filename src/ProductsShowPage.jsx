@@ -197,7 +197,7 @@ export function ProductsShowPage() {
           )}
 
           <button
-            onClick={() => navigate("/products")}
+            onClick={() => navigate(import.meta.env.BASE_URL + "products")} 
             className="mt-8 bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg shadow transition"
           >
             ← Back to Products
